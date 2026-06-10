@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelaria do Egbert | Coisas de Vento e Papel</title>
+    <style>
+        /* Variáveis de Cores (Paleta do John) */
+        :root {
+            --blue-john: #00d5ff;
+            --yellow-john: #fff000;
+            --white: #ffffff;
+            --dark-blue: #0715cd;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: var(--text-color);
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--blue-john);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--yellow-john);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px var(--dark-blue);
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--yellow-john);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 213, 255, 0.2), rgba(255, 255, 255, 0.8)), url('https://www.transparenttextures.com/patterns/clouds.png');
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: var(--dark-blue);
+        }
+
+        /* Seção de Produtos */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .grid-produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid var(--blue-john);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: var(--dark-blue);
+        }
+
+        .btn-comprar {
+            background-color: var(--yellow-john);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .btn-comprar:hover {
+            background-color: #ffd700;
+        }
+
+        /* Sobre o John */
+        .about {
+            background-color: var(--white);
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 20px;
+            border-left: 10px solid var(--blue-john);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .ghost-icon {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌬️ Papelaria do Egbert 🔨</h1>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Cadernos</a>
+        <a href="#">Pegadinhas</a>
+        <a href="#">Sobre Mim</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>"Isso vai ser divertido, eu acho!"</h2>
+    <p>Os melhores suprimentos para anotar seus planos épicos ou apenas desenhar fantasmas.</p>
+</section>
+
+<div class="container">
+    <h2 style="text-align:center; color: var(--dark-blue);">Destaques do Inventário</h2>
+    
+    <div class="grid-produtos">
+        <!-- Produto 1 -->
+        <div class="card">
+            <div class="ghost-icon">👻</div>
+            <h3>Caderno de Anotações Windy</h3>
+            <p>Folhas leves como o ar. Literalmente, cuidado para não voarem.</p>
+            <p><strong>R$ 25,00</strong></p>
+            <button class="btn-comprar">Adicionar ao Alchemiter</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="card">
+            <div class="ghost-icon">🔨</div>
+            <h3>Caneta Martelo Pogo</h3>
+            <p>Escreve muito bem, mas pula se você bater com força na mesa.</p>
+            <p><strong>R$ 12,00</strong></p>
+            <button class="btn-comprar">Adicionar ao Alchemiter</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="card">
+            <div class="ghost-icon">🤡</div>
+            <h3>Kit de Tinta Invisível</h3>
+            <p>Perfeito para pegadinhas ou para esconder segredos da Betty Crocker.</p>
+            <p><strong>R$ 45,00</strong></p>
+            <button class="btn-comprar">Adicionar ao Alchemiter</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="card">
+            <div class="ghost-icon">🎬</div>
+            <h3>Poster do Con Air (Edição Especial)</h3>
+            <p>Não é papelaria, mas eu fiz questão de colocar na loja.</p>
+            <p><strong>R$ 80,00</strong></p>
+            <button class="btn-comprar">Adicionar ao Alchemiter</button>
+        </div>
+    </div>
+
+    <section class="about">
+        <h2>Sobre o Gerente</h2>
+        <p>Olá! Eu sou o John. Eu gosto de filmes bons (e alguns ruins), de fazer truques de mágica e de lutar contra monstros interdimensionais nas horas vagas. Decidi abrir esta papelaria para ajudar as pessoas a organizarem suas jornadas pelo Skaia ou apenas para terem um lugar legal para comprar canetas azuis.</p>
+        <p><em>Nota: Não vendemos nada relacionado a Betty Crocker aqui. Por favor, não insista.</em></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Papelaria do Egbert - Feito com 💨 e ⚡</p>
+    <p><small>Se você encontrar um coelho de pelúcia, ele é meu.</small></p>
+</footer>
+
+</body>
+</html>
